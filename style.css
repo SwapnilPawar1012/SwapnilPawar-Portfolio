@@ -1,0 +1,284 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Arimo", sans-serif;
+}
+
+/* Disable text selection for the entire page */
+body {
+    user-select: none;
+}
+
+/* Alternatively, disable text selection for a specific element */
+.no-select {
+    user-select: none;
+}
+
+navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    background: #7551db;
+    color: white;
+    align-items: center;
+}
+
+.highlighter {
+    color: #7551db;
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+.left p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.left p i {
+    margin-right: 10px;
+    margin: 0 10px;
+}
+
+.profile-img {
+    width: 300px;
+    height: 300px;
+}
+
+.right {
+    transition: transform 0.3s ease;
+    /* Smooth transition for hover effect */
+}
+
+.right a {
+    text-decoration: none;
+    color: #cdcbcb;
+    margin-right: 65px;
+    font-size: 22px;
+}
+
+section {
+    margin: 12px 130px 50px;
+}
+
+.sec-1 {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.sec-1 .left,
+.sec-1 .right {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: 60px;
+}
+
+.sec-1 .right {
+    font-size: 24px;
+}
+
+.sec-1 .right img {
+    width: 70px;
+    height: 70px;
+    margin-left: 20px;
+}
+
+.user {
+    font-size: 200px;
+}
+
+.name {
+    font-size: 50px;
+    font-weight: 900;
+    font-style: normal;
+    display: flex;
+    align-items: center;
+}
+
+img {
+    width: 30px;
+    height: 30px;
+}
+
+.langu {
+    font-size: 18px;
+}
+
+.cards {
+    display: flex;
+    margin-top: 30px;
+    margin-right: 100px;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 225px;
+    height: 140px;
+    font-size: 24px;
+    margin: 0 90px 90px 0;
+    padding: 10px 0 20px 0;
+    border: 1px solid #888;
+    box-shadow: 0px 2px 15px 2px #999;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+a:hover {
+    color: white;
+    font-size: 30px;
+    text-decoration: underline;
+    transform: scale(1.3);
+    /* Increase the size when hovered */
+}
+
+.items {
+    margin: 40px 50px 115px;
+}
+
+.item {
+    margin-bottom: 30px;
+}
+
+ul {
+    margin: 28px 60px;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+}
+
+hr {
+    margin: 0 160px;
+}
+
+.boxes {
+    margin: 35px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.box {
+    margin: 0 25px 25px 0;
+    padding: 20px;
+    border: 1px solid #777;
+    border-radius: 10px;
+    font-size: 22px;
+}
+
+.recommend-box {
+    display: grid;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0 0;
+}
+
+.rb-head {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+input,
+textarea {
+    margin: 10px 0;
+    font-size: 20px;
+    padding: 8px;
+    width: 600px;
+    border: 1px solid #777;
+    border-radius: 5px;
+}
+
+form p {
+    margin: 60px 10px 0 10px;
+    width: 600px;
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    width: 150px;
+    color: #7551db;
+    border: 1px solid #7551db;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.up-arrow {
+    position: absolute;
+    right: 100px;
+    padding-bottom: 70px;
+}
+
+.up-arrow i {
+    font-size: 22px;
+    color: white;
+    background-color: #7551db;
+    border: 1px solid #7551db;
+    padding: 12px;
+    border-radius: 50%;
+}
+
+/* Popup container, initially hidden */
+.popup-container {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Dimmed background */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Popup content styling */
+.popup-content {
+    background-color: #e8bef0;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.popup-content i {
+    border: 2px solid black;
+    border-radius: 50%;
+    padding: 10px;
+    margin: 0 0 30px 0;
+}
+
+.popup-content p {
+    margin: 0 0 30px 0;
+}
+
+.popup-content button {
+    padding: 10px 50px;
+    background: white;
+    font-size: 20px;
+    color: #6f08aa;
+    font-weight: bolder;
+    border: 1px solid #6f08aa;
+    border-radius: 6px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
